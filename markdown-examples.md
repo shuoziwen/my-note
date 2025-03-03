@@ -3,6 +3,27 @@
 This page demonstrates some of the built-in [Getting Started](/examples/examples1) markdown extensions provided by VitePress.
 
 [github](https://github.com/shuoziwen/my-note){target="_black"}
+{{ 1 + 1 }}
+<span v-for="i in 3">{{ i }}</span>
+
+<script setup>
+import { ref } from 'vue'
+
+const count = ref(0)
+</script>
+
+## Markdown Content
+
+The count is: {{ count }}
+
+<button :class="$style.button" @click="count++">Increment</button>
+
+<style module>
+.button {
+  color: red;
+  font-weight: bold;
+}
+</style>
 
 ## Syntax Highlighting
 
@@ -35,6 +56,8 @@ export default {
 ```
 
 ## Custom Containers
+
+### Custom Containers
 
 **Input**
 
